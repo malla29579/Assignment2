@@ -1,0 +1,7 @@
+fn main() {
+    let vec = Vec::new();  // dynamically allocated memory
+    let vec2 = &vec;  // Borrowing reference
+
+    println!("Length: {}", vec.len());
+    // vec is dropped here, memory is freed automatically when it goes out of scope
+}
